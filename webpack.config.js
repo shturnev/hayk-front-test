@@ -49,7 +49,7 @@ module.exports = {
           fallback: 'style-loader',
           //resolve-url-loader may be chained before sass-loader if necessary
           // use: ['css-loader', 'sass-loader'],
-          use: ['css-loader?minimize&sourceMap', 'resolve-url-loader', 'sass-loader?sourceMap'],
+          use: ['css-loader?sourceMap&minimize', 'resolve-url-loader', 'sass-loader?sourceMap'],
           // генерируем отдельный файл:
           publicPath: '../'
         })

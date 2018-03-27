@@ -1,7 +1,7 @@
 {
   "name": "hayk-front-test",
   "version": "1.0.0",
-  "description": "стартовый набор для работы с webpack + pug + scss",
+  "description": "тестовое задание по верстке для hayk",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -25,5 +25,8 @@
     "webpack": "^3",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "vivus": "^0.4.3"
   }
 }
