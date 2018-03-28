@@ -71,23 +71,30 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_min__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_min__ = __webpack_require__(3);
+
 
 // import Vivus from 'vivus';
  //https://github.com/im4aLL/svgPathAnimation
 
-//-
+//анимация лого
 var example_one = new __WEBPACK_IMPORTED_MODULE_1__svg_min__["a" /* default */]({ "elem" : "#svg-logo", "increaseBy" : 4, "timeout" : 5 });
 example_one.animate(function (el) {
-  // console.log(el.current);
   $(`#svg-logo path`).eq(`${el.current - 1}`).css({fill:'white'});
-  // console.log($(`#svg-logo path:eq(${el.current + 1})`));
 });
-// console.log(example_one);
+
 /*
 new Vivus('svg-logo', {duration: 200, file: './images/logo.tracy.svg'}, function () {
   console.log('yo');
 });*/
+
+//анимация текста
+$('.tlt').textillate({initialDelay: 1000,});
+setTimeout(function () {
+  $(".after-tlt").css({opacity: 1});
+}, 3800);
+
+
 
 
 /***/ }),
@@ -97,7 +104,8 @@ new Vivus('svg-logo', {duration: 200, file: './images/logo.tracy.svg'}, function
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 2 */
+/* 2 */,
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

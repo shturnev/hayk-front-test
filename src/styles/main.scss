@@ -19,6 +19,9 @@ html,body{
 .wr{
   max-width: 870px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .boxes-cont{
@@ -34,10 +37,14 @@ html,body{
       display: flex;
       align-items: flex-start;
 
+      @include media(){
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
       &>.icon{
         margin-right: 30px;
       }
-
       &>.text-cont{
         .title{
           color: black;
@@ -54,8 +61,6 @@ html,body{
       }
 
     }
-
-
   }
 }
 .sec-1{
@@ -95,8 +100,14 @@ html,body{
   &:before{
     content: '';
     display:block;
-    min-height: 334px;
+    height: 334px;
     background: url("../img/skew.jpg") no-repeat center top / 100% 100%;
+
+    @include media(){
+      height: 150px;
+      background-position: right top;
+      //background-size: cover;
+    }
   }
   &>.cont{
     padding-top: 35px;
@@ -155,6 +166,34 @@ html,body{
         }
       }
     }
+
+    @include media(){
+      .laptop{
+        width: 100%;
+        margin-right: 0;
+        background: url("../img/laptop.png") no-repeat calc(50% - 72px) top / contain;
+        z-index: 1;
+      }
+      .right-col{
+        width: 100%;
+        z-index: 2;
+        margin-top: -250px;
+        padding: 0 10px 35px;
+        box-sizing: border-box;
+
+
+        .text-cont{
+          max-width: 100%;
+
+          .title{
+            text-align: center;}
+          .button-cont{
+            text-align: center;
+          }
+        }
+      }
+    }
+
   }
 }
 .map-sec{
@@ -183,6 +222,11 @@ html,body{
   }
   .circle-cont{
     $s: 435px;
+
+    @include media(){
+      $s: 300px;
+    }
+
     z-index: 1;
     position: relative;
     display: flex;
@@ -193,6 +237,7 @@ html,body{
     border-radius: 50%;
     background-color: rgba(white, .85);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+
 
     form{
       width: 100%;
@@ -230,6 +275,12 @@ html,body{
         -webkit-appearance: none;
         border: 0;
         cursor: pointer;
+
+        @include media(){
+          width: 33px;
+          height: 33px;
+          margin: 1px 0 -45px 0;
+        }
       }
 
     }
@@ -243,6 +294,12 @@ footer{
   color: white;
   font-size: 14px;
   font-weight: 400;
+}
+
+//--
+.after-tlt{
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 
