@@ -71,7 +71,7 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_min__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__svg_min__ = __webpack_require__(2);
 
 
 // import Vivus from 'vivus';
@@ -104,8 +104,7 @@ setTimeout(function () {
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
