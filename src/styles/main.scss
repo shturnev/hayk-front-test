@@ -223,10 +223,6 @@ html,body{
   .circle-cont{
     $s: 435px;
 
-    @include media(){
-      $s: 300px;
-    }
-
     z-index: 1;
     position: relative;
     display: flex;
@@ -238,6 +234,11 @@ html,body{
     background-color: rgba(white, .85);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
 
+
+    @include media(){
+      $s: 300px;
+      width: $s; height: $s;
+    }
 
     form{
       width: 100%;
