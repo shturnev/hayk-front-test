@@ -1,6 +1,6 @@
 import '../styles/main.scss';
 // import Vivus from 'vivus';
-import SvgAnimation from './svg.min';
+import SvgAnimation from './svg.min'; //https://github.com/im4aLL/svgPathAnimation
 
 //-
 var example_one = new SvgAnimation({ "elem" : "#svg-logo", "increaseBy" : 4, "timeout" : 5 });
