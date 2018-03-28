@@ -32,6 +32,10 @@ module.exports = {
         use: ["file-loader?name=[name].[ext]&outputPath=images/"]
       },
       /*{
+        test: /\.(css)$/i,
+        use: ["file-loader?name=[name].[ext]&outputPath=css/"]
+      },*/
+      /*{
         test: /\.scss$/,
         use: extractSass.extract({
           use: [{
@@ -44,13 +48,21 @@ module.exports = {
         })
       }*/
       {
-        test   : /\.scss$/,
+        test   : /\.(scss)$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           //resolve-url-loader may be chained before sass-loader if necessary
           // use: ['css-loader', 'sass-loader'],
-          use: ['css-loader?minimize&sourceMap', 'resolve-url-loader', 'sass-loader?sourceMap'],
+          use: ['css-loader?sourceMap&minimize', 'resolve-url-loader', 'sass-loader?sourceMap'],
           // генерируем отдельный файл:
+          publicPath: '../'
+        })
+      },
+      {
+        test   : /\.(css)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader?sourceMap&minimize', 'resolve-url-loader'],
           publicPath: '../'
         })
       }
@@ -66,6 +78,7 @@ module.exports = {
       // minify: false
     }),
     new ExtractTextPlugin('css/style.css'),
+    // new ExtractTextPlugin('css/animate.css'),
     new HtmlWebpackPugPlugin(),
     // extractSass
 

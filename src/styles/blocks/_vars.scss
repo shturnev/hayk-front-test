@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+$green: #5fc18b;
+
+@mixin media($size: 768px){
+  @media (max-width: $size) {
+    @content;
+  }
+}
