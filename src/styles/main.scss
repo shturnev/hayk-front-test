@@ -58,8 +58,8 @@ html,body{
   }
 }
 .sec-1{
-  background:#5fc18b;
-  padding: 80px 0;
+  background: $green;
+  padding: 80px 0 20px ;
 
   &>.wr{
     padding-top: 195px;
@@ -81,6 +81,78 @@ html,body{
       font-size: 14px;
       font-weight: 400;
       line-height: 23px;
+
+      p:not(:last-of-type){
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+.sec-2{
+  background: #44a36f;
+  margin-top: -30px;
+  &:before{
+    content: '';
+    display:block;
+    min-height: 334px;
+    background: url("../img/skew.jpg") no-repeat center top / 100% 100%;
+  }
+  &>.cont{
+    padding-top: 35px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .laptop{
+      width: calc(39% - 35px);
+      margin-right: 35px;
+      min-height: 435px;
+      background: url("../img/laptop.png") no-repeat right top;
+    }
+    .right-col{
+      width: 61%;
+
+      .text-cont{
+        max-width: 502px;
+
+        .title{
+          color: white;
+          font-size: 39px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p{
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 23px;
+        }
+        .button-cont{
+          margin-top: 25px;
+
+          a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 202px;
+            height: 57px;
+            border: 3px solid white;
+            border-radius: 5px;
+            box-sizing: border-box;
+            
+            color: white;
+            font-size: 27px;
+            font-weight: 600;
+
+            &:hover{
+              background:white;
+              color: $green;
+            }
+          }
+        }
+      }
     }
   }
 }
