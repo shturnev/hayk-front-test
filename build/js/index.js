@@ -65,13 +65,22 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_main_scss__);
 
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+__webpack_require__(1);
+
+var yy = {
+  a: function a() {
+    console.log("что нибудь");
+  }
+};
+
+var bb = _extends({}, yy);
 
 /***/ }),
 /* 1 */
@@ -81,3 +90,4 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=index.js.map

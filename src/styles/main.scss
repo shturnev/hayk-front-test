@@ -1,6 +1,11 @@
 @charset "utf-8";
-@import "blocks/header";
 
-body{
-  background: #2aa5f6;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+$green: #a8ec46;
+
+.a{
+  color: white;
+  font-size: 45px;
+  background: url("../img/city.jpg") ;
 }

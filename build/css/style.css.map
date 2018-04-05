@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/styles/main.scss"],"names":[],"mappings":"2EACA,GACE","file":"css/style.css","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Open+Sans:400,700,800\");\n.a {\n  background: url(\"../img/city.jpg\"); }\n\n\n\n// WEBPACK FOOTER //\n// ./src/styles/main.scss"],"sourceRoot":""}
