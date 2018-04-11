@@ -1,8 +1,20 @@
+include blocks/_lipsum
+
 doctype html
 html
     head
         meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
     body
+        include blocks/_header
+        include blocks/_boxes
+        include blocks/_sec-1
+        include blocks/_sec-2
+        include blocks/_map-sec
+        include blocks/footer
 
-        h1 привет
-        .a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi consequatur cum cumque, ducimus eaque enim esse illum ipsam laboriosam minima molestiae non nulla, quisquam ut veritatis! Libero, ut.
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js")
+
